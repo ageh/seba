@@ -24,7 +24,7 @@ if your `steamapps` folder is `D:\steamapps` instead of the default `C:\Program 
 
 Per default the database containing the info for the blocks is cached and the game files are only parsed when the cached info does not exist yet, e.g. on the first run of the script. However you can force the database to rebuild by passing the `-r` flag. Simply call
 
-    python -r se_blueprint_analyzer.py blueprint.sbc
+    python se_blueprint_analyzer.py -r blueprint.sbc
 
 (and optionally with the `steamapps` folder changed) and it will parse the game files again. This is useful if there was a new update introducing new blocks. If the script encounters a block in the blueprint that is not contained in the cache it will automatically attempt to parse the game files located at the given `steamapps` folder.
 
